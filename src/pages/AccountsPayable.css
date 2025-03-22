@@ -1,0 +1,146 @@
+.accounts-payable {
+    padding: 20px;
+  }/* Accounts Payable Dashboard */
+.accounts-payable {
+  background-color: #f9fafb;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 36px;
+  color: #2980b9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #7f8c8d;
+}
+
+/* Outstanding Bills Section */
+.outstanding-bills {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.outstanding-bills h2 {
+  font-size: 28px;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.bills-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bills-table th,
+.bills-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.bills-table th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+}
+
+.bills-table td {
+  background-color: #ecf0f1;
+}
+
+.bills-table tr:nth-child(even) td {
+  background-color: #f5f5f5;
+}
+
+/* Buttons */
+.mark-paid-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mark-paid-btn:hover {
+  background-color: #2ecc71;
+}
+
+.add-bill-btn {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+
+.add-bill-btn:hover {
+  background-color: #3498db;
+}
+
+/* Payment History Section */
+.payment-history {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-history h2 {
+  font-size: 28px;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.history-chart h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.history-chart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-chart li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.history-chart li strong {
+  color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outstanding-bills,
+  .payment-history {
+    padding: 15px;
+  }
+
+  .bills-table table,
+  .history-chart ul {
+    font-size: 14px;
+  }
+
+  .add-bill-btn {
+    width: 100%;
+  }
+}

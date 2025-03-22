@@ -1,0 +1,79 @@
+/* src/components/Home.css */
+
+/* Container for the whole homepage */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Welcome Message Section */
+.welcome-message {
+  margin-bottom: 40px;
+}
+
+/* Large Welcome Text */
+.welcome-text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Description Text */
+.description-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Role Selection Buttons */
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Individual Role Buttons */
+.role-button {
+  background-color: #2ecc71;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+}
+
+/* Hover Effect for Buttons */
+.role-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .role-button {
+    width: 80%;
+  }
+}

@@ -1,0 +1,44 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the navbar content horizontally */
+  align-items: center; /* Centers the content vertically */
+  background-color: #2c3e50; /* Dark background color for the navbar */
+  padding: 15px 0; /* Adds padding for spacing */
+  position: sticky; /* Keeps the navbar fixed at the top */
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to navbar */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px; /* Creates space between each navbar link */
+  list-style-type: none; /* Removes default list bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  font-size: 18px; /* Sets the font size of the navbar items */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underline from the links */
+  color: white; /* Sets text color to white */
+  font-weight: 500; /* Makes the font weight medium */
+  padding: 10px 15px; /* Adds padding around the text for clickable area */
+  border-radius: 5px; /* Gives rounded corners to the link */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: #3498db; /* Adds blue background on hover */
+  color: white; /* Keeps text white on hover */
+  transform: scale(1.05); /* Adds a slight zoom effect on hover */
+}
+
+.navbar a.active {
+  background-color: #2980b9; /* Active link has a different background */
+  color: white;
+}

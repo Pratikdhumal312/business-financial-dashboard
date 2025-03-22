@@ -1,0 +1,101 @@
+/* Main container for CFO page */
+.cfo-dashboard {
+  background-color: #f7f8fa; /* Light background for the page */
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.cfo-dashboard h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Container for all components on the dashboard */
+.cfo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Row for the first two sections: FinancialMetrics and Reports */
+.cfo-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Styling for FinancialMetrics and Reports */
+.cfo-row .financial-metrics,
+.cfo-row .reports {
+  flex: 1 1 45%; /* Ensures they take up 45% of the row and wraps on smaller screens */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cfo-row .financial-metrics h2,
+.cfo-row .reports h2 {
+  font-size: 24px;
+  color: #2980b9;
+}
+
+/* Alerts Section */
+.cfo-alerts {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cfo-alerts h2 {
+  font-size: 24px;
+  color: #e74c3c;
+}
+
+.cfo-alerts .alert {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cfo-alerts .alert-info {
+  background-color: #3498db;
+  color: white;
+}
+
+.cfo-alerts .alert-warning {
+  background-color: #f39c12;
+  color: white;
+}
+
+.cfo-alerts .alert-error {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cfo-alerts .alert-success {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+  .cfo-row {
+    flex-direction: column;
+  }
+
+  .cfo-row .financial-metrics,
+  .cfo-row .reports {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+}
